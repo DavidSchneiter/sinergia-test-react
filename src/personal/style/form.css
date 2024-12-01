@@ -1,0 +1,56 @@
+.form-container {
+  /* max-width: 600px; */
+  width: 100%;
+  padding: 20px;
+  background-color: #f5f5f5;
+  margin: 0 0 0 5px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.input-field {
+  width: 48%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+.gender-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  .gender-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: #e0e0e0;
+    transition: background-color 0.3s, color 0.3s;
+    text-align: center;
+    min-width: 100px;
+  }
+  
+  /* Efecto hover */
+  .gender-button:hover {
+    background-color: #d1d1d1;
+  }
+  
+  /* Estilo cuando el radio está seleccionado */
+  input[type="radio"]:checked + .gender-button {
+    background-color: #4caf50;
+    color: white;
+    border-color: #4caf50;
+  }
